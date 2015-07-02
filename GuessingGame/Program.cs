@@ -23,6 +23,9 @@ namespace GuessingGame
             {
                 Console.WriteLine("Enter your guess between 1 to 100");
 
+                // checks whether the user enters the numeric value and
+                // that number is between 1- 100
+                // if not print Incorrect message to the user
                 bool validInput = int.TryParse(Console.ReadLine(), out userGuess);
                 bool validRange = (0 <= userGuess) && (userGuess <= 100);
 
